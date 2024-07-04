@@ -14,7 +14,7 @@ jobs:
 
       - name: Get current version
         run: |
-          VERSION=$(jq -r '.version' package.json)
+          VERSION=$(jq -r '.version' lib/package.json)
           echo "Current version: $VERSION"
           echo "::set-output name=CURRENT_VERSION::$VERSION"
 
@@ -24,58 +24,36 @@ jobs:
           CHANGE_TYPE=$(head -n 1 changes.md)
           echo "Change type: $CHANGE_TYPE"
           echo "change-type=$CHANGE_TYPE" >> $GITHUB_ENV
-      - name: Update package.json version
+      - name: Update lib/package.json version
         run: |
-          CHANGE_TYPE=${{ env.change-type }}
+          CHANGE_TYPE=${{ env.change_type }}
           echo "Change type: $CHANGE_TYPE"
-          
-          # Configure npm to not use the "v" prefix.
-          npm config set tag-version-prefix ""
-          
-          # Check Git status for debugging
-          git status
-          
-          # Ensure Git configuration is set
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          
-          # Attempt to update the version with verbose output
-          case $CHANGE_TYPE in
-            "patch")
-              NEW_VERSION=$(npm version patch --silent --no-git-tag-version)
-              ;;
-            "minor")
-              NEW_VERSION=$(npm version minor --silent --no-git-tag-version)
-              ;;
-            "major")
-              NEW_VERSION=$(npm version major --silent --no-git-tag-version)
-              ;;
-            *)
-              echo "Invalid change type in changes.md"
-              exit 1
-              ;;
-          esac
+
+          # Increment the version without creating a git tag
+          NEW_VERSION=$(npm version $CHANGE_TYPE --no-git-tag-version)
+
+          # Strip the 'v' prefix from the version string
+          NEW_VERSION="${NEW_VERSION#v}"
+
           echo "New version: $NEW_VERSION"
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
 
-      - name: Update package.json file
+      - name: Update lib/package.json file
         run: |
-          jq --arg VERSION "$NEW_VERSION" '.version = $VERSION' package.json > package.json.tmp
-          mv package.json.tmp package.json
+          jq --arg VERSION "$NEW_VERSION" '.version = $VERSION' lib/package.json > lib/package.json.tmp
+          mv lib/package.json.tmp lib/package.json
 
       - name: Update CHANGELOG.md
         run: |
-          DATE=$(date +%Y-%m-%d)
-          # Save the current content of CHANGELOG.md
-          cp CHANGELOG.md CHANGELOG.tmp
-          # Add the new version heading to CHANGELOG.md
-          echo "# $NEW_VERSION ($DATE)" > CHANGELOG.md
+          head -n 1 CHANGELOG.md >> CHANGELOG.tmp
+          DATE=$(date +%d/%m/%Y)
+          # Add the new version heading to CHANGELOG.tmp
+          echo "# $NEW_VERSION ($DATE)" >> CHANGELOG.tmp
           # Append the content of changes.md without the first line
-          tail -n +2 changes.md >> CHANGELOG.md
-          # Add an extra newline for spacing
-          echo "" >> CHANGELOG.md
+          tail -n +2 changes.md >> CHANGELOG.tmp
           # Append the previous content of CHANGELOG.md
-          cat CHANGELOG.tmp >> CHANGELOG.md
+          tail -n +2 CHANGELOG.md >> CHANGELOG.tmp
+          mv CHANGELOG.tmp CHANGELOG.md
           # Remove the temporary file
           rm CHANGELOG.tmp
 
@@ -86,7 +64,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add package.json CHANGELOG.md
+          git add lib/package.json CHANGELOG.md
           git commit -m "Update version to $NEW_VERSION"
 
       - name: Push changes

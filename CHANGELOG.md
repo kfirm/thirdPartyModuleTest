@@ -1,8 +1,3 @@
-# v43.3.2 (2024-07-04)
-### Bug Fixes
-* some random change
-* testing
-
 # Changelog
 
 # 43.3.0 (03-07-2024)
@@ -627,9 +622,9 @@ Breaking Change Confluence
 # 38.15.2 (24-12-2023)
 ### Fix
 * `spt-select`:
-    * Selected items in fromControl value were not updated properly
-    * when using groupBy field, invalid items were deleted on close
-    * wrong number of selected items was displayed in case the selection included invalid items
+  * Selected items in fromControl value were not updated properly
+  * when using groupBy field, invalid items were deleted on close
+  * wrong number of selected items was displayed in case the selection included invalid items
 
 # 38.15.1 (24-12-2023)
 ### Feature
@@ -1554,22 +1549,22 @@ Breaking Change Confluence
 # 27.7.0 (29-03-2023)
 ### Bug Fixes
 * `spt-filter-search-bar`:
-    * Remove min width of search bar
+  * Remove min width of search bar
 ### Features
 * `spt-button`:
-    * Add trailing button story example
+  * Add trailing button story example
 
 <a name="27.6.1"></a>
 # 27.6.1 (27-03-2023)
 ### Bug Fixes
 * `spt-select`:
-    * 'Clear all' logic fix
+  * 'Clear all' logic fix
 
 <a name="27.6.0"></a>
 # 27.6.0 (26-03-2023)
 ### Features
 * `spt-busy`:
-    * Add single line busy to spt-busy
+  * Add single line busy to spt-busy
 
 <a name="27.5.3"></a>
 # 27.5.3 (22-03-2023)
@@ -1581,8 +1576,8 @@ Breaking Change Confluence
 # 27.5.2 (21-03-2023)
 ### Bug Fixes
 * `spt-permission-policy`:
-    * show attention icon when update permissions;
-    * added rootItem logic;
+  * show attention icon when update permissions;
+  * added rootItem logic;
 
 <a name="27.5.1"></a>
 # 27.5.1 (20-03-2023)
@@ -1596,7 +1591,7 @@ Breaking Change Confluence
 ### Features
 
 * `iconsRegistry`:
-    * Added processing-animated icon
+  * Added processing-animated icon
 
 <a name="27.4.6"></a>
 # 27.4.6 (17-03-2023)
@@ -1644,8 +1639,8 @@ Breaking Change Confluence
 # 27.3.0 (13-03-2023)
 ### Features
 * `spt-permission-policy`:
-    * new PermissionPolicyModule;
-    * storybook examples;
+  * new PermissionPolicyModule;
+  * storybook examples;
 
 <a name="27.2.3"></a>
 
@@ -1852,7 +1847,7 @@ Breaking Change Confluence
 ### Features
 
 * `iconsRegistry`:
-    * Added QA (Qatar) region flag
+  * Added QA (Qatar) region flag
 
 <a name="26.5.1"></a>
 
@@ -2052,13 +2047,13 @@ Breaking Change Confluence
 ### Features
 
 * `iconsRegistry`:
-    * add new Azure icon to external logos
-    * add all navigation logos
-    * add cloud-checkr to spot product logos
-    * add sns to external logos
-    * add announcement, bell, chevron-down, chevron-left,
-      chevron-up, email-black, instances-horizontal, manage-user, settings-black, sort-ascending, sort-descending,
-      triangle-up, triangle-up-and-down, user, users to general icons
+  * add new Azure icon to external logos
+  * add all navigation logos
+  * add cloud-checkr to spot product logos
+  * add sns to external logos
+  * add announcement, bell, chevron-down, chevron-left,
+    chevron-up, email-black, instances-horizontal, manage-user, settings-black, sort-ascending, sort-descending,
+    triangle-up, triangle-up-and-down, user, users to general icons
 
 <a name="25.22.1"></a>
 
@@ -2295,8 +2290,8 @@ Breaking Change Confluence
 ### Features
 
 * `spt-filter-search-bar`:
-    * Upgrade to V2 - Chips can now be shown inside the filter search bar and not over it (add [isNewVersion] = ‘true’
-      to use the new version)
+  * Upgrade to V2 - Chips can now be shown inside the filter search bar and not over it (add [isNewVersion] = ‘true’
+    to use the new version)
 
 <a name="25.10.0"></a>
 
@@ -2352,9 +2347,9 @@ Breaking Change Confluence
 ### Features
 
 * `flags`:
-    * indonesia/disabled added
+  * indonesia/disabled added
 * `region-flags`:
-    * ES/disabled added
+  * ES/disabled added
 
 <a name="25.8.1"></a>
 
@@ -2386,8 +2381,8 @@ Breaking Change Confluence
 ### Features
 
 * `spt-tags`:
-    * tags title as input
-    * key and value custom validations
+  * tags title as input
+  * key and value custom validations
 
 ### Fixes
 
@@ -2436,8 +2431,8 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`:
-    * support custom tooltips in grid
-    * support displaying rows as disabled
+  * support custom tooltips in grid
+  * support displaying rows as disabled
 
 <a name="25.2.1"></a>
 
@@ -2479,8 +2474,8 @@ Breaking Change Confluence
 ### Fixes
 
 * `spt-forms-list`:
-    * disabled functionality on select
-    * styling adjustments
+  * disabled functionality on select
+  * styling adjustments
 
 <a name="25.0.1"></a>
 
@@ -2497,10 +2492,10 @@ Breaking Change Confluence
 ### BREAKING CHANGES
 
 * `spt-slider`:
-    * Slider component is now supporting single slider and range slider. The consumer needs to indicate which slider
-      he's using by setting isRange argument.
-    * showBubble and showBubbleAlways is no longer exist, instead there is showValueIndicators argument.
-    * showNumberInput was changed to showValueInputs.
+  * Slider component is now supporting single slider and range slider. The consumer needs to indicate which slider
+    he's using by setting isRange argument.
+  * showBubble and showBubbleAlways is no longer exist, instead there is showValueIndicators argument.
+  * showNumberInput was changed to showValueInputs.
 
 <a name="24.30.1"></a>
 
@@ -2561,14 +2556,14 @@ Breaking Change Confluence
 
 * new component: `spt-info-text-list`
 * `spt-overview`:
-    * edit button is now configurable
-    * long values are now truncated & display tooltip
-    * new `isCopyable` option for allowing copy-to-clipboard by click
+  * edit button is now configurable
+  * long values are now truncated & display tooltip
+  * new `isCopyable` option for allowing copy-to-clipboard by click
 
 ### Fixes
 
 * `spt-overview`:
-    * fixed wrong indentation
+  * fixed wrong indentation
 * `spt-tooltip`: added max-width
 
 <a name="24.26.2"></a>
@@ -2578,7 +2573,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * Fixed defaultSingleLabelTemplate label to avoid showing item.name property when it doesn't have bindValue set
+  * Fixed defaultSingleLabelTemplate label to avoid showing item.name property when it doesn't have bindValue set
 
 <a name="24.26.1"></a>
 
@@ -2587,16 +2582,16 @@ Breaking Change Confluence
 ### Fixes
 
 * `iconsRegistry`:
-    * Replacing organization-1-grey icon
-      <a name="24.26.1"></a>
+  * Replacing organization-1-grey icon
+    <a name="24.26.1"></a>
 
 # 24.26.0 (07-11-2022)
 
 ### Features
 
 * `spt-logs`:
-    * Added inputs for changing options in severity dropdown plus related labels
-    * Added inputs for displaying different property in place of severity on the table
+  * Added inputs for changing options in severity dropdown plus related labels
+  * Added inputs for displaying different property in place of severity on the table
 
 <a name="24.25.0"></a>
 
@@ -2605,7 +2600,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-select`:
-    * Exposed onScroll and onScrollEnd outputs for virtual scrolling
+  * Exposed onScroll and onScrollEnd outputs for virtual scrolling
 
 <a name="24.24.0"></a>
 
@@ -2614,7 +2609,7 @@ Breaking Change Confluence
 ### Features
 
 * `FeatureFlagGuard`:
-    * Added guard used to check if the route is active or not based on ff
+  * Added guard used to check if the route is active or not based on ff
 
 <a name="24.23.0"></a>
 
@@ -2623,9 +2618,9 @@ Breaking Change Confluence
 ### Features
 
 * `iconsRegistry`:
-    * Added globe icon
-    * Added globe-grey icon
-    * Added organization-1-grey icon
+  * Added globe icon
+  * Added globe-grey icon
+  * Added organization-1-grey icon
 
 <a name="24.22.1"></a>
 
@@ -2642,7 +2637,7 @@ Breaking Change Confluence
 ### Features
 
 * `iconsRegistry`:
-    * Added ID (Indonesia) region flag
+  * Added ID (Indonesia) region flag
 
 <a name="24.21.0"></a>
 
@@ -2683,8 +2678,8 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`:
-    * EmptyStateComponent - the default empty state component is now available and supports content projection
-    * Add support for setting a custom component when table is empty
+  * EmptyStateComponent - the default empty state component is now available and supports content projection
+  * Add support for setting a custom component when table is empty
 
 <a name="24.18.4"></a>
 
@@ -2717,7 +2712,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `account-funnel`:
-    * Replaced mat-icon with spt-icon in order to have a ripple for the icons while hovering
+  * Replaced mat-icon with spt-icon in order to have a ripple for the icons while hovering
 
 <a name="24.18.0"></a>
 
@@ -2726,7 +2721,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`:
-    * add support for storing column selection in local storage
+  * add support for storing column selection in local storage
 
 <a name="24.17.3"></a>
 
@@ -2735,9 +2730,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `code-editor`:
-    * background wouldn't change when switching between edit and read mode
+  * background wouldn't change when switching between edit and read mode
 * `spt-slider`:
-    * when slider disabled, button color was black instead of grey
+  * when slider disabled, button color was black instead of grey
 
 ### Maintenance (internal)
 
@@ -2750,16 +2745,16 @@ Breaking Change Confluence
 ### Features
 
 * `spt-route-data`:
-    * Added redirectRouteOnSwitchAccount field,
-      which is can be used in the routing module of
-      MFEs to determine the desired url to redirect when
-      switching account to same or other cloud provider.
+  * Added redirectRouteOnSwitchAccount field,
+    which is can be used in the routing module of
+    MFEs to determine the desired url to redirect when
+    switching account to same or other cloud provider.
 
 * `route-based-communication`:
-    * Added switch account logic that checks the boolean
-      value of shouldMFEHandleSwitchAccountBS$ (from client-core-services)
-      to check if the MFE is handling the switch account behavior, if true we will
-      check the value of redirectRouteOnSwitchAccount and redirect accordingly.
+  * Added switch account logic that checks the boolean
+    value of shouldMFEHandleSwitchAccountBS$ (from client-core-services)
+    to check if the MFE is handling the switch account behavior, if true we will
+    check the value of redirectRouteOnSwitchAccount and redirect accordingly.
 
 <a name="24.17.1"></a>
 
@@ -2776,8 +2771,8 @@ Breaking Change Confluence
 ### Features
 
 * `spt-selectable-chip`:
-    * added spt-selectable-chip component.
-      <a name="24.16.0"></a>
+  * added spt-selectable-chip component.
+    <a name="24.16.0"></a>
 
 # 24.16.0 (28-09-2022)
 
@@ -2791,7 +2786,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `date-picker`:
-    * predefined range resets when dialog closes if apply wasn't clicked
+  * predefined range resets when dialog closes if apply wasn't clicked
 
 <a name="24.15.0"></a>
 
@@ -2800,7 +2795,7 @@ Breaking Change Confluence
 ### Features
 
 * `connection-funnel`:
-    * create azure/aws management account flow;
+  * create azure/aws management account flow;
 
 <a name="24.14.2"></a>
 
@@ -2817,7 +2812,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-code-editor`:
-    * all action buttons should be optional
+  * all action buttons should be optional
 
 <a name="24.14.0"></a>
 
@@ -2826,15 +2821,15 @@ Breaking Change Confluence
 ### Features
 
 * `spt-date-picker`:
-    * new compact design
-    * removed the title section in the date picker header
-    * set to now buttons are now text link
+  * new compact design
+  * removed the title section in the date picker header
+  * set to now buttons are now text link
 
 ### Bug Fixes
 
 * `spt-date-picker`:
-    * changed all paddings and margins to 4 multiples
-    * aligned titles and dividers to center
+  * changed all paddings and margins to 4 multiples
+  * aligned titles and dividers to center
 
 <a name="24.13.1"></a>
 
@@ -2843,8 +2838,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `connection-funnel`:
-    * fix azure create request
-    * remove duration after clicking on runTemplate btn for AWS management
+  * fix azure create request
+  * remove duration after clicking on runTemplate btn for AWS management
 
 ### Maintenance (internal)
 
@@ -2858,9 +2853,9 @@ Breaking Change Confluence
 ### Features
 
 * `sptLogs`:
-    * sort button added
-    * download icon to spt-icon
-    * severity is not all caps
+  * sort button added
+  * download icon to spt-icon
+  * severity is not all caps
 
 <a name="24.12.1"></a>
 
@@ -2869,7 +2864,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `date-picker`:
-    * invalid date with more than one error, shows only the first error
+  * invalid date with more than one error, shows only the first error
 
 <a name="24.12.0"></a>
 
@@ -2903,9 +2898,9 @@ Breaking Change Confluence
 ### Features
 
 * `spt-service-card`:
-    * Added styling element for services
+  * Added styling element for services
 * `spt-clickable-card-list`:
-    * Added additional controls for styling selected spt-service-cards
+  * Added additional controls for styling selected spt-service-cards
 
 <a name="24.9.1"></a>
 
@@ -2922,8 +2917,8 @@ Breaking Change Confluence
 ### Features
 
 * `logger-provider`:
-    * report exception to client logger.
-    * add logger service to be used by mfe's
+  * report exception to client logger.
+  * add logger service to be used by mfe's
 
 <a name="24.8.0"></a>
 
@@ -2932,7 +2927,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-clickable-card-list`:
-    * Added wrapping component for tracking clicked ids
+  * Added wrapping component for tracking clicked ids
 
 <a name="24.7.1"></a>
 
@@ -3013,8 +3008,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * All option checkbox and selected indicator disappear when clicking the X button .
-    * No hover on group selection (https://github.com/spotinst/spot-client-shared/pull/443)
+  * All option checkbox and selected indicator disappear when clicking the X button .
+  * No hover on group selection (https://github.com/spotinst/spot-client-shared/pull/443)
 
 <a name="24.5.0"></a>
 
@@ -3023,7 +3018,7 @@ Breaking Change Confluence
 ### Features
 
 * `search-bar-filter-utils`:
-    * Add a support for searching in an array type value.
+  * Add a support for searching in an array type value.
 
 <a name="24.4.0"></a>
 
@@ -3032,7 +3027,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`:
-    * Added sidebar to show / hide /re-arrange columns.
+  * Added sidebar to show / hide /re-arrange columns.
 
 <a name="24.3.0"></a>
 
@@ -3041,7 +3036,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-gauge`: added `spt-gauge` component.
-    * added examples to gallery
+  * added examples to gallery
 
 <a name="24.2.0"></a>
 
@@ -3070,11 +3065,11 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-form-list`:
-    * Added input placeholder as variable
-    * Added validity check on changes
-    * Add button is now disabled when form is invalid
+  * Added input placeholder as variable
+  * Added validity check on changes
+  * Add button is now disabled when form is invalid
 * `spt-schedule-cron-expression`:
-    * Cron validations updated
+  * Cron validations updated
 
 <a name="24.1.3"></a>
 
@@ -3083,8 +3078,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-overview`:
-    * Edit button now emits event with section key
-    * Clicking on edit icon doesn't collapse section
+  * Edit button now emits event with section key
+  * Clicking on edit icon doesn't collapse section
 
 <a name="24.1.2"></a>
 
@@ -3101,7 +3096,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * Added logic to avoid dropdown opening when chip is dismissed
+  * Added logic to avoid dropdown opening when chip is dismissed
 
 <a name="24.1.0"></a>
 
@@ -3110,10 +3105,10 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`:
-    * Added the option to use custom aggregation function.
-    * Added the option to customize the displayed text of the grids' components (e.g. placeholders, labels, titles,
-      etc.)
-    * Added CellRenderer to customize specific cells in the grid.
+  * Added the option to use custom aggregation function.
+  * Added the option to customize the displayed text of the grids' components (e.g. placeholders, labels, titles,
+    etc.)
+  * Added CellRenderer to customize specific cells in the grid.
 
 <a name="24.0.0"></a>
 
@@ -3189,8 +3184,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-date-picker`:
-    * Range Presets in the footer are now synced with the selected range of the calendar
-    * Disabled style adjustment
+  * Range Presets in the footer are now synced with the selected range of the calendar
+  * Disabled style adjustment
 
 ### Features
 
@@ -3384,9 +3379,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * The option to remove selection with backspace is now disabled
-    * The 'ALL' checkbox is now removed when filtering
-    * The 'selected' label is now removed when filtering
+  * The option to remove selection with backspace is now disabled
+  * The 'ALL' checkbox is now removed when filtering
+  * The 'selected' label is now removed when filtering
 
 <a name="21.1.3"></a>
 
@@ -3534,9 +3529,9 @@ Breaking Change Confluence
 ### Features
 
 * `spt-busy`:
-    * Added busy states for "Doughnut Chart" & "Bar Chart"
+  * Added busy states for "Doughnut Chart" & "Bar Chart"
 * `spt-grid`:
-    * Added Server-Side Row Model support to handle infinite scroll
+  * Added Server-Side Row Model support to handle infinite scroll
 
 <a name="19.5.1"></a>
 
@@ -3570,8 +3565,8 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`
-    * added isRowMaster - callback to determine if a row should be a master row
-    * added getRowClass - callback to add css classes to a row
+  * added isRowMaster - callback to determine if a row should be a master row
+  * added getRowClass - callback to add css classes to a row
 
 <a name="19.3.1"></a>
 
@@ -3580,11 +3575,11 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-date-picker`:
-    * Fixed time validations.
-    * changed calendar icon according to the design system
-    * changed selected date range color according to the design.
+  * Fixed time validations.
+  * changed calendar icon according to the design system
+  * changed selected date range color according to the design.
 * `spt-logs`:
-    * changed severity DD to spt-select.
+  * changed severity DD to spt-select.
 
 <a name="19.3.0"></a>
 
@@ -3594,9 +3589,9 @@ Breaking Change Confluence
 
 * new `spt-vertical-stepper` component
 * new anchor-scroll directives:
-    * `sptScrollManager`
-    * `sptScrollAnchor`
-    * `sptScrollSection`
+  * `sptScrollManager`
+  * `sptScrollAnchor`
+  * `sptScrollSection`
 
 <a name="19.2.1"></a>
 
@@ -3605,8 +3600,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-charts`:
-    * Preserve previous series fix - added oneToOne
-      property (https://github.com/highcharts/highcharts-angular#options-details)
+  * Preserve previous series fix - added oneToOne
+    property (https://github.com/highcharts/highcharts-angular#options-details)
 
 <a name="19.2.0"></a>
 
@@ -3624,8 +3619,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-date-picker`:
-    * Changes on input field are now also changing the input inside the header
-    * Add disabled option to the component
+  * Changes on input field are now also changing the input inside the header
+  * Add disabled option to the component
 
 <a name="19.1.0"></a>
 
@@ -3642,9 +3637,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * z-index issue: dropdown panel doesn't hide (cover) other `spt-select`s
+  * z-index issue: dropdown panel doesn't hide (cover) other `spt-select`s
 * `spt-schedule-cron-expression`:
-    * fix initFromTasks in case of null params
+  * fix initFromTasks in case of null params
 
 <a name="19.0.0"></a>
 
@@ -3660,19 +3655,19 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-date-picker`:
-    * added pre-defined time range of 1H,12H and 24H,
-      and updated 1D to Today
-    * added from\to time validations.
-    * align to date before from validation error text with figma.
-    * added from date after to validation error text
+  * added pre-defined time range of 1H,12H and 24H,
+    and updated 1D to Today
+  * added from\to time validations.
+  * align to date before from validation error text with figma.
+  * added from date after to validation error text
 
 * `spt-logs`:
-    * added input labels.
-    * disabled inputs while loading.
-    * added pre-defined time range of 1H,12H and 24H, and removed 1D.
-    * When opening the date picker >
-        - By default, Select the last 12 hours.
-        - The end time is now (the moment the user clicked), the max time range can be up to 23:59 of that day.
+  * added input labels.
+  * disabled inputs while loading.
+  * added pre-defined time range of 1H,12H and 24H, and removed 1D.
+  * When opening the date picker >
+    - By default, Select the last 12 hours.
+    - The end time is now (the moment the user clicked), the max time range can be up to 23:59 of that day.
 
 <a name="18.1.0"></a>
 
@@ -3689,7 +3684,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-account-connection-funnel`:
-    * fix blocker loader (aws funnel);
+  * fix blocker loader (aws funnel);
 
 <a name="18.0.0"></a>
 
@@ -3698,14 +3693,14 @@ Breaking Change Confluence
 ### BREAKING CHANGES
 
 * `tags`:
-    * validForm event removed
-    * formChange event emits tags object instead of form
-    * tags object changed
+  * validForm event removed
+  * formChange event emits tags object instead of form
+  * tags object changed
 
 * `schedule-cron-exression`:
-    * validForm event removed
-    * formChange event emits tasks object instead of form
-    * tasks object changed
+  * validForm event removed
+  * formChange event emits tasks object instead of form
+  * tasks object changed
 
 <a name="17.4.0"></a>
 
@@ -3714,8 +3709,8 @@ Breaking Change Confluence
 ### Features (experimental)
 
 * `spt-date-picker`:
-    * added `withHeader` input.
-    * Indicates if to include the header, default is true
+  * added `withHeader` input.
+  * Indicates if to include the header, default is true
 
 <a name="17.3.0"></a>
 
@@ -3724,7 +3719,7 @@ Breaking Change Confluence
 ### Features (experimental)
 
 * `spt-account-connection-funnel`:
-    * added AZURE account connection funnel
+  * added AZURE account connection funnel
 
 <a name="17.2.0"></a>
 
@@ -3733,7 +3728,7 @@ Breaking Change Confluence
 ### Features (experimental)
 
 * `spt-account-connection-funnel`:
-    * added GCP account connection funnel
+  * added GCP account connection funnel
 
 <a name="17.1.1"></a>
 
@@ -3742,8 +3737,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * Fixed wrong label when in multi-select, items are in the form an array and only one item available and is
-      selected.
+  * Fixed wrong label when in multi-select, items are in the form an array and only one item available and is
+    selected.
 
 <a name="17.1.0"></a>
 
@@ -3752,9 +3747,9 @@ Breaking Change Confluence
 ### Features (experimental)
 
 * `spt-account-connection-funnel`:
-    * added module with new account connection funnel
-    * contains AWS account connection
-    * added examples to gallery
+  * added module with new account connection funnel
+  * contains AWS account connection
+  * added examples to gallery
 
 <a name=“17.0.0”></a>
 
@@ -3763,8 +3758,8 @@ Breaking Change Confluence
 ### BREAKING CHANGES
 
 * `Account` model: removed the `preferences` property
-    * related to the following fix
-      in `spot-client-core-services`: https://github.com/spotinst/spot-client-core-services/pull/36
+  * related to the following fix
+    in `spot-client-core-services`: https://github.com/spotinst/spot-client-core-services/pull/36
 * removed `ScsAuthProvider`, `ScsOrganizationProvider` & `AccountPreferences` interfaces from public API
 
 ### Bug Fixes
@@ -3787,14 +3782,14 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `code-editor`:
-    * Fixed expand/collapse buttons
+  * Fixed expand/collapse buttons
 
 <a name=“16.7.2”></a>
 
 # 16.7.2 (27-04-2022)
 
 * `mat-checkbox`:
-    * style adjustments - hover state and border radius
+  * style adjustments - hover state and border radius
 
 <a name=“16.7.1”></a>
 
@@ -3803,7 +3798,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * Show X icon only when hover and focus. Also change X icon size and color when hover
+  * Show X icon only when hover and focus. Also change X icon size and color when hover
 
 <a name=“16.7.0”></a>
 
@@ -3821,7 +3816,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-slider`:
-    * New slider with min/max labels and number-input
+  * New slider with min/max labels and number-input
 
 <a name=“16.5.0”></a>
 
@@ -3830,14 +3825,14 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-grid`:
-    * fix missing tooltip on grouped-by
+  * fix missing tooltip on grouped-by
 * `spt-log`
-    * fix log order
+  * fix log order
 
 ### Features
 
 * `spt-grid`:
-    * background color as variable
+  * background color as variable
 
 <a name=“16.4.12”></a>
 
@@ -3846,9 +3841,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `mat-tabs`:
-    * fix color
-    * disabled hover grey
-    * selected tab’s underline should be thinner - 2px
+  * fix color
+  * disabled hover grey
+  * selected tab’s underline should be thinner - 2px
 
 <a name=“16.4.11”></a>
 
@@ -3857,15 +3852,15 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * searchable: style adjustments
+  * searchable: style adjustments
 * `mat-menu`:
-    * style adjustments: menu shadow
+  * style adjustments: menu shadow
 * `mat-expansion-panel`:
-    * style adjustments: hover state
-    * `form-list`:
-    * inout changed to design system - using mat-form-field
+  * style adjustments: hover state
+  * `form-list`:
+  * inout changed to design system - using mat-form-field
 * `tags`:
-    * icons sizes changed to large class
+  * icons sizes changed to large class
 
 <a name=“16.4.10”></a>
 
@@ -3874,7 +3869,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-select`:
-    * style-adjustments: tooltip
+  * style-adjustments: tooltip
 
 <a name=“16.4.9”></a>
 
@@ -3883,7 +3878,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `empty state`:
-    * Added background color, changed titles color
+  * Added background color, changed titles color
 
 <a name=“16.4.8”></a>
 
@@ -3892,7 +3887,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-grid`:
-    * Hide ag-grid context menu
+  * Hide ag-grid context menu
 
 <a name=“16.4.7”></a>
 
@@ -3910,10 +3905,10 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-badge`:
-    * Fix font weight
+  * Fix font weight
 * `spt-chip`:
-    * Fix font weight
-    * Fix text color
+  * Fix font weight
+  * Fix text color
 
 <a name=“16.4.5”></a>
 
@@ -3922,9 +3917,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `mat dialog`:
-    * Remove box shadow from header
+  * Remove box shadow from header
 * page-title: style adjustments
-    * Font size, components height,padding between the text and the separator
+  * Font size, components height,padding between the text and the separator
 
 <a name=“16.4.4”></a>
 
@@ -3933,7 +3928,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `breadcrumbs`:
-    * Fix text color
+  * Fix text color
 
 <a name=“16.4.3”></a>
 
@@ -3942,7 +3937,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `mat tooltip`:
-    * Fix dark mat-tooltip
+  * Fix dark mat-tooltip
 
 <a name=“16.4.2”></a>
 
@@ -3951,7 +3946,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `summary card`:
-    * Fix number text’s weight to 400
+  * Fix number text’s weight to 400
 
 <a name=“16.4.1”></a>
 
@@ -3960,7 +3955,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `material-custom-styles`:
-    * Stop tabs from moving when hover
+  * Stop tabs from moving when hover
 
 <a name="16.4.0"></a>
 
@@ -3969,9 +3964,9 @@ Breaking Change Confluence
 ### Features
 
 * `spt-code-editor`:
-    * Updated isReadOnly variable to work as a optional boolean input to Enable / Disable editmode of code editor.
+  * Updated isReadOnly variable to work as a optional boolean input to Enable / Disable editmode of code editor.
 * `spt-breadcrumbs`:
-    * Added queryParams support to breadcrumbs link.
+  * Added queryParams support to breadcrumbs link.
 
 <a name=“16.3.0”></a>
 
@@ -3980,9 +3975,9 @@ Breaking Change Confluence
 ### Features
 
 * `spt-code-editor`:
-    * change the name of the download (export) file:
-        * add new Input() - `filePrefix` - for the download file
-        * add date and time to the file name.
+  * change the name of the download (export) file:
+    * add new Input() - `filePrefix` - for the download file
+    * add date and time to the file name.
 
 <a name="16.2.0"></a>
 
@@ -3999,7 +3994,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-logs`:
-    * export view details event.
+  * export view details event.
 
 <a name=“16.1.3”></a>
 
@@ -4008,7 +4003,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-banner`:
-    * Change the info svg in information banner to blue (info-blue.svg)
+  * Change the info svg in information banner to blue (info-blue.svg)
 
 <a name=“16.1.2”></a>
 
@@ -4017,7 +4012,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `button`:
-    * Remove clicked styling (cdk-focused)
+  * Remove clicked styling (cdk-focused)
 
 <a name=“16.1.1”></a>
 
@@ -4026,7 +4021,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-logs`:
-    * After reset filters, sent request.
+  * After reset filters, sent request.
 
 <a name=“16.1.0”></a>
 
@@ -4035,7 +4030,7 @@ Breaking Change Confluence
 ### Features
 
 * `spt-grid`
-    * Added master detail option.
+  * Added master detail option.
 
 <a name=“16.0.7”></a>
 
@@ -4044,9 +4039,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-date-picker`:
-    * 'set-to-now' button wasn't updating the time properly.
+  * 'set-to-now' button wasn't updating the time properly.
 * `spt-log`:
-    * change the max date of the filters for today at 23:59.
+  * change the max date of the filters for today at 23:59.
 
 <a name=“16.0.6”></a>
 
@@ -4055,7 +4050,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-search-bar-input`:
-    * Add X icon to remove text from search bar, also escape button press remove text from search bar
+  * Add X icon to remove text from search bar, also escape button press remove text from search bar
 
 <a name=“16.0.5”></a>
 
@@ -4064,7 +4059,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * Reverted storybook version to `6.3.12` from `6.4.19`.
-    * spt-chips and filter-search-bar components were broken because of storybook upgrade.
+  * spt-chips and filter-search-bar components were broken because of storybook upgrade.
 
 <a name=“16.0.4”></a>
 
@@ -4073,8 +4068,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-logs`:
-    * Fix limit message bug
-    * Update max logs limit message
+  * Fix limit message bug
+  * Update max logs limit message
 
 <a name=“16.0.3”></a>
 
@@ -4083,7 +4078,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-logs`:
-    * Remove space character from each value when download logs as csv
+  * Remove space character from each value when download logs as csv
 
 <a name=“16.0.2”></a>
 
@@ -4092,8 +4087,8 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `date-picker`:
-    * set-to-now button not updating the selected range in the calendar
-        * This change done to support mac Numbers app to display logs contains comma as csv
+  * set-to-now button not updating the selected range in the calendar
+    * This change done to support mac Numbers app to display logs contains comma as csv
 
 <a name=“16.0.1”></a>
 
@@ -4102,7 +4097,7 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-grid` -
-    * suppress column header menu
+  * suppress column header menu
 
 <a name=“16.0.0”></a>
 
@@ -4111,23 +4106,23 @@ Breaking Change Confluence
 ### BREAKING CHANGES
 
 * `spt-code-editor` -
-    * Fixed JSON code editor language type from JSON5 to JSON
-        * This change can break the existing application after upgrade - make sure the json is encoded with double
-          quotes and not single quotes(As per JSON standards).
+  * Fixed JSON code editor language type from JSON5 to JSON
+    * This change can break the existing application after upgrade - make sure the json is encoded with double
+      quotes and not single quotes(As per JSON standards).
 
 ### Bug Fixes
 
 * `spt-code-editor` -
-    * Fixed JSON code editor language type from JSON5 to JSON.
-    * Added JSON5 code support.
-    * Updated storybook version(Storybook was breaking when the input variables were having double quotes).
+  * Fixed JSON code editor language type from JSON5 to JSON.
+  * Added JSON5 code support.
+  * Updated storybook version(Storybook was breaking when the input variables were having double quotes).
 * `spt-select` -
-    * Fixed wrong label when in multi-select and only one item available and is selected.
+  * Fixed wrong label when in multi-select and only one item available and is selected.
 
 ### Features
 
 * `spt-grid`
-    * Added getter and setter events to capture and update `initialSelectedIds` input data.
+  * Added getter and setter events to capture and update `initialSelectedIds` input data.
 
 <a name=“15.0.4”></a>
 
@@ -4136,9 +4131,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `spt-logs` -
-    * align left buttons
-    * keyboard 'enter' event will apply changes
-    * 'busy' will align to left with max-height in spt-logs
+  * align left buttons
+  * keyboard 'enter' event will apply changes
+  * 'busy' will align to left with max-height in spt-logs
 * `mat-tabs` - only selected will be bold
 
 <a name=“15.0.3”></a>
@@ -4148,9 +4143,9 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `date-picker`:
-    * `date-picker-header` inputs were not aligned with `p-calendar`
-    * set-to-now button wasn't working properly
-    * no validator in case that selected (to) date is before (from) date
+  * `date-picker-header` inputs were not aligned with `p-calendar`
+  * set-to-now button wasn't working properly
+  * no validator in case that selected (to) date is before (from) date
 
 <a name=“15.0.2”></a>
 
@@ -4168,10 +4163,10 @@ Breaking Change Confluence
 ### Bug Fixes
 
 * `filter-search-bar` & `filter-chips` throw errors after visiting client-main routes
-    * this happened because one of client-main's 3rd party deps (AMD-dateTimePicker) monkey-patches Array.prototype with
-      special functions,
-      and then `filter-search-bar` & `filter-chips` use "for...in" loops on arrays (expecting string indexes but getting
-      functions instead)
+  * this happened because one of client-main's 3rd party deps (AMD-dateTimePicker) monkey-patches Array.prototype with
+    special functions,
+    and then `filter-search-bar` & `filter-chips` use "for...in" loops on arrays (expecting string indexes but getting
+    functions instead)
 
 <a name=“15.0.0”></a>
 
@@ -4180,13 +4175,13 @@ Breaking Change Confluence
 ### BREAKING CHANGES
 
 * added new peer dependency - 'ag-grid-enterprise'
-    * added license in shared library
+  * added license in shared library
 
 ### Features
 
 * `spt-grid` new features
-    * `GridGroupedColumn` - Support row grouping, this column definition is included as the first column in the grid.
-        * use the `groupedByFields` to define by which columns to group
+  * `GridGroupedColumn` - Support row grouping, this column definition is included as the first column in the grid.
+    * use the `groupedByFields` to define by which columns to group
 
 ### Bug Fixes
 
@@ -4265,16 +4260,16 @@ Breaking Change Confluence
 ### Features
 
 * new `spt-schedule-cron-expression`component
-    * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-schedulecronexpression--schedule-cron-expression)
-    * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-schedulecronexpression-schedulecronexpression-readme--page)
+  * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-schedulecronexpression--schedule-cron-expression)
+  * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-schedulecronexpression-schedulecronexpression-readme--page)
 
 * new `spt-tags`component
-    * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-tags--tags)
-    * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-tags-tags-readme--page)
+  * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-tags--tags)
+  * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-tags-tags-readme--page)
 
 * new `spt-form-list`component
-    * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-formlist--form-list)
-    * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-formlist-formlist-readme--page)
+  * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-formlist--form-list)
+  * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-formlist-formlist-readme--page)
 
 <a name="13.7.0"></a>
 
@@ -4296,8 +4291,8 @@ Breaking Change Confluence
 ### Features
 
 * Notifications can be setup to work via client-core-services, for better UX
-    * how to: in your application, simply provide the new `NotificationsProvider` from `client-core-services` under the
-      new `SCS_NOTIFICATION_PROVIDER_TOKEN`
+  * how to: in your application, simply provide the new `NotificationsProvider` from `client-core-services` under the
+    new `SCS_NOTIFICATION_PROVIDER_TOKEN`
 
 ### Deprecations
 
@@ -4333,9 +4328,9 @@ Breaking Change Confluence
 
 * `spt-chip`: added Read Only Chip property and state
 * Updated and aligned `spt-chip` styling to more closely match Spotlight Design
-    * Chips are smaller: aligned height, layout spacing, font size
-    * Colors updated and added border outline
-    * `close.svg` replaced with smaller icon from Spotlight for `/assets/icons` and `assets/icons/general`
+  * Chips are smaller: aligned height, layout spacing, font size
+  * Colors updated and added border outline
+  * `close.svg` replaced with smaller icon from Spotlight for `/assets/icons` and `assets/icons/general`
 * Migrated `spt-chip` & `spt-chip-list` to Storybook and removed from Gallery
 
 <a name="13.2.3"></a>
@@ -4440,29 +4435,29 @@ v12.2.13
 * Ivy Library is **incompatible with previous versions**. To consume the new version of the library please first update
   your corresponding client MFE to Ng12.
 * For help to update your respective MFE application:
-    * Please reach out in the *#sig-frontend-developers* slack channel
-    * For reference the PR to update `spot-client-template` repository
-        - [spot-client-template Ng12 Upgrade PR#11](https://github.com/spotinst/spot-client-template/pull/11)
-    * Helpful Links:
-        * [Angular Update Guide/Tool](https://update.angular.io/)
-        * [Angular Releases Guide](https://angular.io/guide/releases)
-        * [GitHub: Angular Changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md)
+  * Please reach out in the *#sig-frontend-developers* slack channel
+  * For reference the PR to update `spot-client-template` repository
+    - [spot-client-template Ng12 Upgrade PR#11](https://github.com/spotinst/spot-client-template/pull/11)
+  * Helpful Links:
+    * [Angular Update Guide/Tool](https://update.angular.io/)
+    * [Angular Releases Guide](https://angular.io/guide/releases)
+    * [GitHub: Angular Changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md)
 * Known Issues in WebStorm (and other JetBrains IDEs) with respect to intelilisense IDE highlighting errors incorrectly
-    * [JetBrains Issue](https://youtrack.jetbrains.com/issue/WEB-45118)
-    * Verified fix in 2021.3 works. Link to latest WebStorm for Mac
-        - [DL Latest WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)
+  * [JetBrains Issue](https://youtrack.jetbrains.com/issue/WEB-45118)
+  * Verified fix in 2021.3 works. Link to latest WebStorm for Mac
+    - [DL Latest WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)
 
 ### Features
 
 * Angular updated to v12 🎉
 * Library dependencies have been updated for Ng12!
-    * See the following commit hashes:
-        * [Ng12 Update Commit - diff package.json](https://github.com/spotinst/spot-client-shared/commit/24734e52e3a78719ca96fe0ad8fc9ec49f382626#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519)
-        * [Ng12 Update Commit - diff lib/package.json](https://github.com/spotinst/spot-client-shared/commit/24734e52e3a78719ca96fe0ad8fc9ec49f382626#diff-1e946220773aef913945326261b7ee8d08b8ec29ccc66ef7c348950439212ffb)
-    * To maintain backwards compatibility with Storybook@6.3 `ngx-valdemort` and `primeng` were only updated to
-      ngx-valdemort@5.1.0 and primeng@11.4.5
-        * [SB@6.3 Update - diff package.json](https://github.com/spotinst/spot-client-shared/pull/193/commits/a3450addcf7092cf470626ea7b10e08a215c613c#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519)
-        * [SB@6.3 Update - diff lib/package.json](https://github.com/spotinst/spot-client-shared/pull/193/commits/a3450addcf7092cf470626ea7b10e08a215c613c#diff-1e946220773aef913945326261b7ee8d08b8ec29ccc66ef7c348950439212ffb)
+  * See the following commit hashes:
+    * [Ng12 Update Commit - diff package.json](https://github.com/spotinst/spot-client-shared/commit/24734e52e3a78719ca96fe0ad8fc9ec49f382626#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519)
+    * [Ng12 Update Commit - diff lib/package.json](https://github.com/spotinst/spot-client-shared/commit/24734e52e3a78719ca96fe0ad8fc9ec49f382626#diff-1e946220773aef913945326261b7ee8d08b8ec29ccc66ef7c348950439212ffb)
+  * To maintain backwards compatibility with Storybook@6.3 `ngx-valdemort` and `primeng` were only updated to
+    ngx-valdemort@5.1.0 and primeng@11.4.5
+    * [SB@6.3 Update - diff package.json](https://github.com/spotinst/spot-client-shared/pull/193/commits/a3450addcf7092cf470626ea7b10e08a215c613c#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519)
+    * [SB@6.3 Update - diff lib/package.json](https://github.com/spotinst/spot-client-shared/pull/193/commits/a3450addcf7092cf470626ea7b10e08a215c613c#diff-1e946220773aef913945326261b7ee8d08b8ec29ccc66ef7c348950439212ffb)
 
 <a name="11.2.0"></a>
 
@@ -4472,7 +4467,7 @@ v12.2.13
 
 * `spt-grid`- add `autoHeight` set row height based on the contents of the cells
 * Add “Set to now” buttons to the date picker:
-    * Clicking the button should set the date and time to the current time
+  * Clicking the button should set the date and time to the current time
 
 ### Bug Fixes
 
@@ -4507,21 +4502,21 @@ v12.2.13
 ### Bug Fixes
 
 * `spt-logs`:
-    * Change the min date of the date picker from 30 days to 90 days
+  * Change the min date of the date picker from 30 days to 90 days
 
-    * Add one more preset to the date picker: *3M*
+  * Add one more preset to the date picker: *3M*
 
-    * <b>*Reset Filters*</b> button should be disabled as long as none of the filters wasn’t changed from the default
+  * <b>*Reset Filters*</b> button should be disabled as long as none of the filters wasn’t changed from the default
 
-    * <b>*Download*</b> button should be disabled in case of log viewer loading + empty state
+  * <b>*Download*</b> button should be disabled in case of log viewer loading + empty state
 
-    * The “more than 1000” records message should be updated with the following text:
+  * The “more than 1000” records message should be updated with the following text:
 
-        * "Spot presents the latest 1000 log records. Use the filters to view specific types of logs."
+    * "Spot presents the latest 1000 log records. Use the filters to view specific types of logs."
 
-    * The empty state message should be replaced with the following text:
+  * The empty state message should be replaced with the following text:
 
-        * "There were no events found for the filters chosen."
+    * "There were no events found for the filters chosen."
 
 <a name="10.3.0"></a>
 
@@ -4596,18 +4591,13 @@ v12.2.13
 ### Features
 
 * new `spt-select` component
-    * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-select--simple-select)
-    * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-select-select-readme--page)
+  * [demo](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-select--simple-select)
+  * [readme](http://storybook-public.dev.spotinst.com:8890/?path=/story/components-select-select-readme--page)
 * `spt-chips` improvements
-    * add isDisabled support
-    * changed style
+  * add isDisabled support
+  * changed style
 * “route-based communication” with the upcoming navbar MFE
 
 ### Bug Fixes
 
 * `NotificationsService` fix missing icons
-# v43.3.1 (04/07/2024)
-patch
-### Internal
-* some random change
-* testing
