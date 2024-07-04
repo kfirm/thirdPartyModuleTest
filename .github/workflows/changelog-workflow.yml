@@ -29,6 +29,9 @@ jobs:
           CHANGE_TYPE=${{ env.change-type }}
           echo "Change type: $CHANGE_TYPE"
           
+          # Configure npm to not use the "v" prefix.
+          npm config set tag-version-prefix ""
+          
           # Check Git status for debugging
           git status
           
@@ -62,12 +65,22 @@ jobs:
 
       - name: Update CHANGELOG.md
         run: |
-          DATE=$(date +%d/%m/%Y)
-          echo "# $NEW_VERSION ($DATE)" >> CHANGELOG.md
-          cat changes.md >> CHANGELOG.md
+          DATE=$(date +%Y-%m-%d)
+          # Save the current content of CHANGELOG.md
+          cp CHANGELOG.md CHANGELOG.tmp
+          # Add the new version heading to CHANGELOG.md
+          echo "# $NEW_VERSION ($DATE)" > CHANGELOG.md
+          # Append the content of changes.md without the first line
+          tail -n +2 changes.md >> CHANGELOG.md
+          # Add an extra newline for spacing
+          echo "" >> CHANGELOG.md
+          # Append the previous content of CHANGELOG.md
+          cat CHANGELOG.tmp >> CHANGELOG.md
+          # Remove the temporary file
+          rm CHANGELOG.tmp
 
       - name: Delete changes.md
-        run: rm changes.md
+        run: git rm changes.md
 
       - name: Commit changes
         run: |

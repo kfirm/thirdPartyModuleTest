@@ -1,6 +1,6 @@
 {
   "name": "third-party-test",
-  "version": "v43.3.1",
+  "version": "43.3.1",
   "description": "",
   "main": "run.js",
   "scripts": {

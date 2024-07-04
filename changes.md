@@ -1,4 +1,4 @@
 patch
-### Internal
+### Bug Fixes
 * some random change
 * testing
