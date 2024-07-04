@@ -18,13 +18,15 @@ jobs:
           echo "::set-output name=CURRENT_VERSION::$VERSION"
 
       - name: Get change type
+        id: get_change_type
         run: |
           CHANGE_TYPE=$(head -n 1 changes.md)
           echo "Change type: $CHANGE_TYPE"
-          echo "::set-output name=CHANGE_TYPE::$CHANGE_TYPE"
-
+          echo "{change-type}=$CHANGE_TYPE" >> $GITHUB_OUTPUT
       - name: Update package.json version
         run: |
+          CHANGE_TYPE=${{ steps.get_change_type.outputs.change-type }}
+          echo "Change type: $CHANGE_TYPE"
           case $CHANGE_TYPE in
             "patch")
               NEW_VERSION=$(npm version patch --silent)
