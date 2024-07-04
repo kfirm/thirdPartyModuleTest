@@ -45,6 +45,8 @@ jobs:
 
       - name: Update CHANGELOG.md
         run: |
+          # Create new file CHANGELOG.tmp
+          touch CHANGELOG.tmp
           head -n 1 CHANGELOG.md >> CHANGELOG.tmp
           DATE=$(date +%d/%m/%Y)
           # Add the new version heading to CHANGELOG.tmp
