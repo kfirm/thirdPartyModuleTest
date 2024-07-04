@@ -22,10 +22,10 @@ jobs:
         run: |
           CHANGE_TYPE=$(head -n 1 changes.md)
           echo "Change type: $CHANGE_TYPE"
-          echo "{change-type}=$CHANGE_TYPE" >> $GITHUB_OUTPUT
+          echo "change-type=$CHANGE_TYPE" >> $GITHUB_ENV
       - name: Update package.json version
         run: |
-          CHANGE_TYPE=${{ steps.get_change_type.outputs.change-type }}
+          CHANGE_TYPE=${{ env.change-type }}
           echo "Change type: $CHANGE_TYPE"
           case $CHANGE_TYPE in
             "patch")
