@@ -27,15 +27,24 @@ jobs:
         run: |
           CHANGE_TYPE=${{ env.change-type }}
           echo "Change type: $CHANGE_TYPE"
+          
+          # Check Git status for debugging
+          git status
+          
+          # Ensure Git configuration is set
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          # Attempt to update the version with verbose output
           case $CHANGE_TYPE in
             "patch")
-              NEW_VERSION=$(npm version patch --silent)
+              NEW_VERSION=$(npm version patch --silent --no-git-tag-version)
               ;;
             "minor")
-              NEW_VERSION=$(npm version minor --silent)
+              NEW_VERSION=$(npm version minor --silent --no-git-tag-version)
               ;;
             "major")
-              NEW_VERSION=$(npm version major --silent)
+              NEW_VERSION=$(npm version major --silent --no-git-tag-version)
               ;;
             *)
               echo "Invalid change type in changes.md"
@@ -43,6 +52,7 @@ jobs:
               ;;
           esac
           echo "New version: $NEW_VERSION"
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
 
       - name: Update package.json file
         run: |
