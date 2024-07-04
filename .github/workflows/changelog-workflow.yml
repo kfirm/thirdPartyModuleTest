@@ -55,10 +55,8 @@ jobs:
           tail -n +2 changes.md >> CHANGELOG.tmp
           # Append the previous content of CHANGELOG.md
           tail -n +2 CHANGELOG.md >> CHANGELOG.tmp
+          # Replace CHANGELOG.tmp with CHANGELOG.md
           mv CHANGELOG.tmp CHANGELOG.md
-          # Remove the temporary file
-          rm CHANGELOG.tmp
-
       - name: Delete changes.md
         run: git rm changes.md
 
