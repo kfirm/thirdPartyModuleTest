@@ -77,5 +77,5 @@ jobs:
           git commit -m "Update version to $NEW_VERSION"
 
       - name: Push changes
-        run: git push origin main
-        
+        run: git push origin master
+
