@@ -1,4 +1,7 @@
 # Changelog
+# 43.4.0 (04/07/2024)
+### breaking shit
+* fix some stuff
 
 # 43.3.0 (03-07-2024)
 ### Feature Change
