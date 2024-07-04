@@ -19,7 +19,7 @@ jobs:
 
       - name: Get change type
         run: |
-          CHANGE_TYPE=$(head -n 1 changes.txt)
+          CHANGE_TYPE=$(head -n 1 changes.md)
           echo "Change type: $CHANGE_TYPE"
           echo "::set-output name=CHANGE_TYPE::$CHANGE_TYPE"
 
@@ -36,7 +36,7 @@ jobs:
               NEW_VERSION=$(npm version major --silent)
               ;;
             *)
-              echo "Invalid change type in changes.txt"
+              echo "Invalid change type in changes.md"
               exit 1
               ;;
           esac
@@ -51,10 +51,10 @@ jobs:
         run: |
           DATE=$(date +%d/%m/%Y)
           echo "# $NEW_VERSION ($DATE)" >> CHANGELOG.md
-          cat changes.txt >> CHANGELOG.md
+          cat changes.md >> CHANGELOG.md
 
-      - name: Delete changes.txt
-        run: rm changes.txt
+      - name: Delete changes.md
+        run: rm changes.md
 
       - name: Commit changes
         run: |
