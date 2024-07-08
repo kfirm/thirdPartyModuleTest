@@ -1,11 +1,29 @@
-name: Update Version
+name: Update Changelog
 
 on:
   pull_request:
-    types: [closed]
+    types: [opened, synchronize, reopened, closed]
     branches:
       - master
 jobs:
+  validate_changes_file:
+    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'synchronize' || github.event.action == 'reopened')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate changes.md exists and has correct first line
+        run: |
+          if [ ! -f changes.md ]; then
+            echo "ERROR: changes.md does not exist."
+            exit 1
+          fi
+          FIRST_LINE=$(head -n 1 changes.md)
+          if [[ "$FIRST_LINE" =~ ^(patch|minor|major)$ ]]; then
+            echo "changes.md validation passed."
+          else
+            echo "ERROR: The first line of changes.md must be 'patch', 'minor', or 'major'."
+            exit 1
+          fi
   update-version:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
