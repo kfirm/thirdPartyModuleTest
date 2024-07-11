@@ -68,6 +68,7 @@ jobs:
           head -n 1 CHANGELOG.md >> CHANGELOG.tmp
           DATE=$(date +%d/%m/%Y)
           # Add the new version heading to CHANGELOG.tmp
+          echo -en '\n' >> CHANGELOG.tmp
           echo "# $NEW_VERSION ($DATE)" >> CHANGELOG.tmp
           # Append the content of changes.md without the first line
           tail -n +2 changes.md >> CHANGELOG.tmp
